@@ -1,0 +1,35 @@
+$("#jumper").hide();
+$("#jumperturn").hide();
+$("#land").hide();
+$("#snow").hide();
+$("#king").hide();
+$("#firsttext").hide();
+$("#thirdtext").hide();
+$("#done").hide();
+$("#DRAGON").hover(function(){
+    $("#jumper").show();
+    $("#DRAGON").hide();
+    $("#secondtext").hide();
+    $("#firsttext").show();
+});
+$("#jumper").click(function(){
+    $("#jumperturn").show();
+    $("#jumper").hide();
+});
+$("#jumperturn").click(function(){
+    $("#land").show();
+    $("#jumperturn").hide();
+    $("#thirdtext").show();
+    $("#firsttext").hide();
+});
+$("#land").dblclick(function(){
+    $("#snow").show();
+    $("#land").hide();
+});
+$("#snow").dblclick(function(){
+    $("#king").show();
+    $("#snow").hide();
+    $("#thirdtext").hide();
+    $("#done").show();
+    $("body").css("background-color","#CFF1FC");
+});
